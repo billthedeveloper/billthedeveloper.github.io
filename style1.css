@@ -1,0 +1,106 @@
+
+/* This is a selector that is used to select the html element: body, so that it can be styled with the following CSS properties and their values. */ 
+ body{
+	background-color: Azure;
+}
+
+/* This is an id selector that uses the id attribute of an HTML element to select a specific element and style it with the following CSS properties and their values. */
+  #resume {
+	font-family: verdana;
+	color:#D5CBA8;
+	text-align: center;
+}
+
+  #name {
+	font-family: verdana;
+	color:#D5CBA8;
+	text-align:center;
+	margin:0px 0px -20px 0px;
+}
+  #location {
+	font-family:verdana;
+	color:#D5CBA8;
+	text-align:center;
+}
+
+/* This is a class selector that selects only <ul> elements with the class atrribute equal to topnav, to be styled using these CSS properties and their values. */
+  ul.topnav{
+	list-style-type:none; /* Specifies that this list doesn't need bullets as item markers because the list items are being converted to navigation links. */
+	margin: 0; /* removes margin from the list*/
+	padding: 0;/* removes padding from the list*/
+	overflow: hidden;
+	background-color: #D5CBA8;
+	position: sticky; /* Makes it a navigation bar that toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). */
+	top: 0;
+}
+
+  ul.topnav li {
+	float: left; /* By default list items are displayed in a block, each item on their own line. This removes the line breaks before and after each list item, to display them on one line so that they appear more like items in a horizontal navigation bar. 
+	border-right: 1px solid #bbb; /*creates link dividers between the elements that appear as gray right borders so that we know the limits and the whereabouts of each navigation link. */
+}
+ 
+/* Specifies the layout of the navigation links that are list items of the ul element with a class attribute with the value topnav as the class's name. */
+  ul.topnav li a { 
+	 display: block; /* Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify padding (and height, width, margins, etc. if you want). */
+	 color: white;
+	 text-align: center;
+	 padding: 14px 16px;
+	 text-decoration: none;
+}
+
+  /* Change the link color to #111 (black) on hover. */
+  ul.topnav li a:hover {
+	background-color: #111111;
+}
+
+/* Creates three equal columns that float next to each other */
+.column{
+	float:left;
+	width: 33.33%;
+	color:#D5CBA8;
+}
+
+.row:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+  img.profile{
+	border-radius: 50%;
+	height: 300px;
+	width: 250px;
+}
+
+/* Media queries to stack the topnav vertically and to make the three columns stack on top of each other, instead of next to each other on smaller screens (600px or less). */
+ @media screen and (max-width: 600px){
+      ul.topnav li {float: none;}
+      .column {width: 100%;}
+}
+
+ul.skills li {
+	color:#D5CBA8;
+        margin-top: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.pro {
+	color:#D5CBA8;
+}
+
+ul.projects li {
+	color:#D5CBA8;
+        margin-top: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+ul.employment li {
+	color:#D5CBA8;
+        margin-top: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
